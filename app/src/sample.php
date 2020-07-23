@@ -3,7 +3,7 @@ namespace App;
 
 class Sample
 {
-    public function hello() {
-        return "World";
-    }
+  public function hello() {
+    return "World";
+  }
 }

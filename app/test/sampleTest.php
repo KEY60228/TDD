@@ -5,11 +5,11 @@ use App\Sample;
 
 class SampleTest extends TestCase
 {
-    public function testReturnHello()
-    {
-        $sample = new Sample();
-        $result = $sample->hello();
+  public function testReturnHello()
+  {
+    $sample = new Sample();
+    $result = $sample->hello();
 
-        $this->assertEquals("World", $result);
-    }
+    $this->assertEquals("World", $result);
+  }
 }
