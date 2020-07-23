@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpunit colors="true" verdose="true" bootstrap="vendor/autoload.php">
   <testsuites>
-    <testsuite name="Sample">
+    <testsuite name="TDD">
       <Directory>test</Directory>
     </testsuite>
   </testsuites>
