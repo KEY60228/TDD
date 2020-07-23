@@ -3,13 +3,13 @@
 namespace Money;
 
 class Dollar {
-  public $amount = 10;
+  public $amount;
 
   public function __construct($amount) {
-
+    $this->amount = $amount;
   }
 
-  public function times() {
-
+  public function times($multiplier) {
+    $this->amount *= $multiplier;
   }
 }
