@@ -22,6 +22,6 @@ abstract class Money {
   }
   
   public static function franc($amount): Money {
-    return new Franc($amount);
+    return new Franc($amount, null);
   }
 }
