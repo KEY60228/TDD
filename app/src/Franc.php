@@ -5,10 +5,10 @@ namespace Money;
 class Franc extends Money {
   public function __construct($amount, $currency) {
     $this->amount = $amount;
-    $this->currency = "CHF";
+    $this->currency = $currency;
   }
 
   public function times($multiplier): Money {
-    return new Franc($this->amount * $multiplier, null);
+    return Money::franc($this->amount * $multiplier);
   }
 }

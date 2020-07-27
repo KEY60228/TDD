@@ -18,10 +18,10 @@ abstract class Money {
   }
 
   public static function dollar($amount): Money {
-    return new Dollar($amount);
+    return new Dollar($amount, "USD");
   }
   
   public static function franc($amount): Money {
-    return new Franc($amount, null);
+    return new Franc($amount, "CHF");
   }
 }
