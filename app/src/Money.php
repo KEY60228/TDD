@@ -4,8 +4,13 @@ namespace Money;
 
 abstract class Money {
   protected $amount;
+  protected $currency;
 
   abstract function times($multiplier): Money;
+
+  public function currency() {
+    return $this->currency;
+  }
 
   public function equals($object) {
     $money = $object;
