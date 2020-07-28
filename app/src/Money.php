@@ -4,8 +4,18 @@ namespace Money;
 
 abstract class Money {
   protected $amount;
+  protected $currency;
+
+  public function __construct($amount, $currency) {
+    $this->amount = $amount;
+    $this->currency = $currency;
+  }
 
   abstract function times($multiplier): Money;
+
+  public function currency() {
+    return $this->currency;
+  }
 
   public function equals($object) {
     $money = $object;
@@ -13,10 +23,10 @@ abstract class Money {
   }
 
   public static function dollar($amount): Money {
-    return new Dollar($amount);
+    return new Dollar($amount, "USD");
   }
   
   public static function franc($amount): Money {
-    return new Franc($amount);
+    return new Franc($amount, "CHF");
   }
 }
