@@ -31,4 +31,8 @@ class Money {
   public static function franc($amount): Money {
     return new Franc($amount, "CHF");
   }
+
+  public function __toString() {
+    return $this->amount + " " + $this->currency;
+  }
 }
