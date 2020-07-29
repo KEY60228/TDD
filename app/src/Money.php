@@ -2,7 +2,7 @@
 
 namespace Money;
 
-abstract class Money {
+class Money {
   protected $amount;
   protected $currency;
 
@@ -11,7 +11,9 @@ abstract class Money {
     $this->currency = $currency;
   }
 
-  abstract function times($multiplier): Money;
+  function times($multiplier) {
+    return null;
+  }
 
   public function currency() {
     return $this->currency;
