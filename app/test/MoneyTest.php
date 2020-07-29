@@ -1,9 +1,12 @@
 <?php
+declare(strict_types=1);
 
 namespace Money;
 
 use PHPUnit\Framework\TestCase;
 use Money\Dollar;
+use Money\Franc;
+use Money\Money;
 
 class MoneyTest extends TestCase {
   public function testMultiplication() {
@@ -24,5 +27,9 @@ class MoneyTest extends TestCase {
     $five = Money::franc(5);
     $this->assertEquals(Money::franc(10), $five->times(2));
     $this->assertEquals(Money::franc(15), $five->times(3));
+  }
+
+  public function testDifferentClassEquality() {
+    $this->assertTrue((new Money(10, "CHF"))->equals(new Franc(10, "CHF")));
   }
 }
