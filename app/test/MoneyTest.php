@@ -1,9 +1,12 @@
 <?php
+declare(strict_types=1);
 
 namespace Money;
 
 use PHPUnit\Framework\TestCase;
 use Money\Dollar;
+use Money\Franc;
+use Money\Money;
 
 class MoneyTest extends TestCase {
   public function testMultiplication() {
