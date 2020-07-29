@@ -8,6 +8,6 @@ class Dollar extends Money {
   }
 
   public function times($multiplier): Money {
-    return new Dollar($this->amount * $multiplier, "USD");
+    return new Dollar($this->amount * $multiplier, $this->currency);
   }
 }
