@@ -35,4 +35,8 @@ class Money {
   public function __toString() {
     return $this->amount + " " + $this->currency;
   }
+
+  public function plus ($addend) {
+    return new Money($this->amount + $addend->amount, $this->currency);
+  }
 }
