@@ -20,4 +20,12 @@ class MoneyTest extends TestCase {
     $this->assertFalse((Money::dollar(5))->equals(Money::dollar(6)));
     $this->assertFalse((Money::franc(5))->equals(Money::dollar(5)));
   }
+
+  public function testSimpleAddition() {
+    $five = Money::dollar(5);
+    $sum = $five->plus($five);
+    $bank = new Bank();
+    $reduced = $bank->reduce($sum, "USD");
+    $this->assertEquals(Money::dollar(10), $reduced);
+  }
 }

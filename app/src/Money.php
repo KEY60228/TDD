@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Money;
 
-class Money {
+class Money implements Expression{
   protected $amount;
   protected $currency;
 
@@ -34,5 +34,9 @@ class Money {
 
   public function __toString() {
     return $this->amount + " " + $this->currency;
+  }
+
+  public function plus ($addend): Expression {
+    return new Money($this->amount + $addend->amount, $this->currency);
   }
 }
