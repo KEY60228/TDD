@@ -7,6 +7,7 @@ use PHPUnit\Framework\TestCase;
 use Money\Dollar;
 use Money\Franc;
 use Money\Money;
+use Money\Sum;
 
 class MoneyTest extends TestCase {
   public function testMultiplication() {
