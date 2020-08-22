@@ -43,4 +43,8 @@ class Money implements Expression{
   public function getAmount(): int {
     return $this->amount;
   }
+
+  public function reduce (String $to) {
+    return $this;
+  }
 }
