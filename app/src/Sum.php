@@ -12,4 +12,9 @@ class Sum implements Expression{
     $this->augend = $augend;
     $this->addend = $addend;
   }
+
+  public function reduce (String $to) {
+    $amount = $this->augend->getAmount() + $this->addend->getAmount();
+    return new Money($amount, $to);
+  }
 }
