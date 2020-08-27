@@ -14,6 +14,9 @@ class Bank {
   }
 
   public function rate(String $from, String $to) {
+    if ($from === $to) {
+      return 1;
+    }
     return $this->rates[(new Pair($from, $to))->hashCode()];
   }
 }
