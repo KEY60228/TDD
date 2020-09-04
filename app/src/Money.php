@@ -44,7 +44,8 @@ class Money implements Expression{
     return $this->amount;
   }
 
-  public function reduce (String $to) {
-    return $this;
+  public function reduce (Bank $bank, String $to) {
+    $rate = $bank->rate($this->currency, $to);
+    return new Money($this->amount / $rate, $to);
   }
 }
