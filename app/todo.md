@@ -1,6 +1,6 @@
 # To Do リスト
 
-- [ ] $5 + 10 CHF = $10 (レートが2:1の場合)
+- [x] ~~$5 + 10 CHF = $10 (レートが2:1の場合)~~
 - [x] ~~$5 + $5 = $10~~
 - [ ] $5 + $5 がMoneyを返す
 - [x] ~~$bank->reduce(Money)~~
@@ -21,4 +21,6 @@
 - [x] ~~FrancとDollarの比較~~
 - [x] ~~通貨の概念~~
 - [x] ~~testFrancMultiplicationを削除する？~~
+- [ ] Sum.plus
+- [ ] Expression.times
 
