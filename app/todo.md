@@ -21,6 +21,6 @@
 - [x] ~~FrancとDollarの比較~~
 - [x] ~~通貨の概念~~
 - [x] ~~testFrancMultiplicationを削除する？~~
-- [ ] Sum.plus
+- [x] Sum.plus
 - [ ] Expression.times
 
