@@ -12,7 +12,7 @@ class Money implements Expression{
     $this->currency = $currency;
   }
 
-  function times($multiplier): Expression {
+  public function times($multiplier): Expression {
     return new Money($this->amount * $multiplier, $this->currency);
   }
 
