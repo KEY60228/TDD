@@ -17,10 +17,10 @@
 - [x] ~~5 CHF * 2 = 10 CHF~~
 - [x] ~~DollarとFrancの重複~~
 - [x] ~~equalsの一般化~~
-- [x] timesの一般化
+- [x] ~~timesの一般化~~
 - [x] ~~FrancとDollarの比較~~
 - [x] ~~通貨の概念~~
 - [x] ~~testFrancMultiplicationを削除する？~~
-- [ ] Sum.plus
-- [ ] Expression.times
+- [x] ~~Sum.plus~~
+- [x] ~~Expression.times~~
 
